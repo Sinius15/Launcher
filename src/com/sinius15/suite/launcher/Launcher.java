@@ -42,7 +42,7 @@ public class Launcher {
 			suite.init();
 			maze.init();
 			chess.init();
-			if(suite.versionList != null)
+			if(Game.online)
 				Data.launcherFrame.btnPlay.setEnabled(true);
 			
 		}}, "getInternetData");

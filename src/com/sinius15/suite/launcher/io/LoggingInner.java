@@ -30,7 +30,7 @@ public class LoggingInner {
 			if(!getReturnString("req=login&name=" + username + "&pass=" + password)){
 				JOptionPane.showMessageDialog(frame, "The combination of username and passowrd is incorrect."+ System.lineSeparator()
 						+ "Please try again.'"+ System.lineSeparator()
-						+ "If you have forgotten your password, visit sinius15.com/suite.", "Invalid login", JOptionPane.ERROR_MESSAGE);
+						+ "If you have forgotten your password, visit sinius15.com.", "Invalid login", JOptionPane.ERROR_MESSAGE);
 				return false;
 			}
 			
@@ -45,7 +45,7 @@ public class LoggingInner {
 	}
 	
 	private static boolean getReturnString(String req) throws IOException{
-		URL url = new URL("http://sinius15.com/suite/portal.php?" + req);
+		URL url = new URL("http://sinius15.com/Launcher/portal.php?" + req);
     	URLConnection urlConn = url.openConnection();
         BufferedInputStream is = new BufferedInputStream(urlConn.getInputStream());
         byte[] b = new byte[1024];

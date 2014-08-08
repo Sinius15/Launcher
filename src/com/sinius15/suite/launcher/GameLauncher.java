@@ -46,7 +46,7 @@ public class GameLauncher {
 			}
 			if(online && (localVersion == null || !localVersion.equals(versionToStart))){	//if need to download
 				System.out.println("going to download verision " + versionToStart);
-				if(!downloadReqFiles(dataFolder, "http://sinius15.com/launcher/" + game.getName() + "/" + versionToStart + ".zip")){
+				if(!downloadReqFiles(dataFolder, "http://sinius15.com/Launcher/" + game.getName() + "/" + versionToStart + ".zip")){
 					System.err.println("[Error]  -  Something went wrong while downloading the files. Maybe there is no internet connection?");
 					return;
 				}

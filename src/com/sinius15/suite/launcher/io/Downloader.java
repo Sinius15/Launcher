@@ -92,7 +92,7 @@ public class Downloader {
     
     
     public static String[] getVersionList(PrintStream status, Game game) throws IOException{
-    	URL url = new URL("http://sinius15.com/launcher/portal.php?game="+game.getName()+"&&req=versionList");
+    	URL url = new URL("http://sinius15.com/Launcher/portal.php?game="+game.getName()+"&&req=versionList");
     	URLConnection urlConn = url.openConnection();
         BufferedInputStream is = new BufferedInputStream(urlConn.getInputStream());
         byte[] b = new byte[1024];
@@ -106,7 +106,7 @@ public class Downloader {
     
     
     public static String getLatestVersion(PrintStream status, Game game) throws IOException{
-    	URL url = new URL("http://sinius15.com/launcher/portal.php?game="+game.getName()+"&&req=latestVersion");
+    	URL url = new URL("http://sinius15.com/Launcher/portal.php?game="+game.getName()+"&&req=latestVersion");
     	URLConnection urlConn = url.openConnection();
         BufferedInputStream is = new BufferedInputStream(urlConn.getInputStream());
         byte[] b = new byte[1024];
